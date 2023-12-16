@@ -7,7 +7,9 @@ describe('Login suite', () => {
     
   it('should do login', () => {
     loginPage.doLogin();
+    cy.wait(1000)
     cy.get('a.crm-navigation__link[href="/coupons"]').click();
+    cy.wait(1000)
     cy.get('button.crm-button').click();
     createCouponPage.doCreate();
   
