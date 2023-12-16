@@ -7,7 +7,7 @@ describe('Login API suite:', () => {
   })
 
   it('should do login successfully', async () => {
-    let coupons = await baseController.getCouponsList()
-    cy.log(coupons.Items);
+    const coupons = await baseController.getCouponsList
+    cy.log(coupons);
   })
 })
